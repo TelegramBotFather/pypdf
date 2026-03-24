@@ -1,6 +1,6 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1730314938624,
-  "repoUrl": "https://github.com/py-pdf/pypdf",
+  "lastUpdate": 1774363351357,
+  "repoUrl": "https://github.com/TelegramBotFather/pypdf",
   "entries": {
     "Python Benchmark with pytest-benchmark": [
       {
@@ -60857,6 +60857,74 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.005627135434142526",
             "extra": "mean: 783.9484936000076 msec\nrounds: 5"
+          }
+        ]
+      }
+    ],
+    "CPython Benchmark": [
+      {
+        "commit": {
+          "author": {
+            "email": "104909326+ReinerBRO@users.noreply.github.com",
+            "name": "rikka0612",
+            "username": "ReinerBRO"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "23d6683d5183ee0814300946b346f313f225483f",
+          "message": "BUG: Fix extract_links pairing when annotations include non-links (#3687)\n\nCloses #3667.",
+          "timestamp": "2026-03-24T10:17:06+01:00",
+          "tree_id": "63edb736fb2f3d1e4fd906f8f0696ce20960b93b",
+          "url": "https://github.com/TelegramBotFather/pypdf/commit/23d6683d5183ee0814300946b346f313f225483f"
+        },
+        "date": 1774363349095,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "tests/bench.py::test_page_operations",
+            "value": 3.0620692203320896,
+            "unit": "iter/sec",
+            "range": "stddev: 0.004362563495245101",
+            "extra": "mean: 326.5765493999993 msec\nrounds: 5"
+          },
+          {
+            "name": "tests/bench.py::test_merge",
+            "value": 18.72787332199792,
+            "unit": "iter/sec",
+            "range": "stddev: 0.003669165779560139",
+            "extra": "mean: 53.39634580000023 msec\nrounds: 20"
+          },
+          {
+            "name": "tests/bench.py::test_text_extraction",
+            "value": 0.282870055992388,
+            "unit": "iter/sec",
+            "range": "stddev: 0.03777348407490834",
+            "extra": "mean: 3.535192144999999 sec\nrounds: 5"
+          },
+          {
+            "name": "tests/bench.py::test_read_string_from_stream_performance",
+            "value": 17.724609269667784,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0014352065041867675",
+            "extra": "mean: 56.41873311764932 msec\nrounds: 17"
+          },
+          {
+            "name": "tests/bench.py::test_image_new_property_performance",
+            "value": 0.09150686208780191,
+            "unit": "iter/sec",
+            "range": "stddev: 0.02612578932523127",
+            "extra": "mean: 10.928142187199995 sec\nrounds: 5"
+          },
+          {
+            "name": "tests/bench.py::test_large_compressed_image_performance",
+            "value": 1.4899681200401513,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0027455210366972094",
+            "extra": "mean: 671.1552996000023 msec\nrounds: 5"
           }
         ]
       }
